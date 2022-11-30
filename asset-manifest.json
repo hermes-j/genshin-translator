@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac6cde08.css",
+    "main.js": "/static/js/main.cc4af6b0.js",
+    "static/js/787.d43a9dbe.chunk.js": "/static/js/787.d43a9dbe.chunk.js",
+    "static/media/NanumGothic.ttf": "/static/media/NanumGothic.46c03af3832f3527bd51.ttf",
+    "static/media/inazuma.otf": "/static/media/inazuma.815303697385cd9c793c.otf",
+    "static/media/KhaenriahNeue-Chasm-2.000.otf": "/static/media/KhaenriahNeue-Chasm-2.000.52c09648eb98a8bab955.otf",
+    "static/media/KhaenriahNeue-Regular-2.000.otf": "/static/media/KhaenriahNeue-Regular-2.000.1c34ea4ca985d5913650.otf",
+    "static/media/InazumaNeue-Regular-0.006.otf": "/static/media/InazumaNeue-Regular-0.006.12e53cc5fe90afdc960f.otf",
+    "static/media/SumeruNeue-Regular-0.007.otf": "/static/media/SumeruNeue-Regular-0.007.51ab78a644348f2b9b1b.otf",
+    "static/media/TeyvatNeue-Regular-1.002.otf": "/static/media/TeyvatNeue-Regular-1.002.455b1fde9befc908be86.otf",
+    "static/media/DeshretNeue-Regular-1.001.otf": "/static/media/DeshretNeue-Regular-1.001.5ac4939d690c88ced681.otf",
+    "index.html": "/index.html",
+    "main.ac6cde08.css.map": "/static/css/main.ac6cde08.css.map",
+    "main.cc4af6b0.js.map": "/static/js/main.cc4af6b0.js.map",
+    "787.d43a9dbe.chunk.js.map": "/static/js/787.d43a9dbe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac6cde08.css",
+    "static/js/main.cc4af6b0.js"
+  ]
+}
