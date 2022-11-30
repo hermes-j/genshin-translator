@@ -32,9 +32,3 @@ The following languages are not supported since they are not based on Latin alph
 - https://www.reddit.com/r/Genshin_Impact_Leaks/comments/xihki4/contains_leak_we_deciphered_the_sumeru_desert/
 - original font files from https://github.com/SpeedyOrc-C/Hoyo-Glyphs
 - react-icons https://react-icons.github.io/react-icons/
-
-## References
-- https://genshin-impact.fandom.com/wiki/Language
-- https://www.reddit.com/r/Genshin_Impact_Leaks/comments/xihki4/contains_leak_we_deciphered_the_sumeru_desert/
-- original font files from https://github.com/SpeedyOrc-C/Hoyo-Glyphs
-- react-icons https://react-icons.github.io/react-icons/
