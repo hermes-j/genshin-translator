@@ -11,9 +11,7 @@ import { HiSwitchVertical } from 'react-icons/hi';
 function App() {
   const [lang, setLang] = useState('KR');
   const [font, setFont] = useState('Teyvat');
-  const [content, setContent] = useState(
-    'THE FLOWER CARRIAGE ROCKED NAHIDA OPENED HER EYES'
-  );
+  const [content, setContent] = useState('');
   const [order, setOrder] = useState(false);
 
   const onKeyClick = (value: string) => {
@@ -104,7 +102,7 @@ function App() {
           className='content'
           style={{ fontFamily: font, fontSize: 20 }}
           value={content}
-          placeholder='content'
+          placeholder='input'
           onChange={(event) => {
             if (!order) setContent(event.target.value);
           }}
