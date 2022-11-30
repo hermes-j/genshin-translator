@@ -82,7 +82,7 @@ function App() {
           {lang === 'KR' ? '이나즈마' : 'Inazuma'}
         </Button>
         <Button onClick={() => setFont('inazumap')}>
-          {lang === 'KR' ? "이나즈마('p' 추가)" : "Inazuma(+letter 'p')"}
+          {lang === 'KR' ? "이나즈마 ('p' 추가)" : "Inazuma(+letter 'p')"}
         </Button>
         <Button onClick={() => setFont('Sumeru')}>
           {lang === 'KR' ? '수메르 우림' : 'Sumeru'}
@@ -91,10 +91,10 @@ function App() {
           {lang === 'KR' ? '수메르 사막' : 'Deshret'}
         </Button>
         <Button onClick={() => setFont('Khaenriah')}>
-          {lang === 'KR' ? '켄리아' : 'Khaenriah'}
+          {lang === 'KR' ? '고대문자 (켄리아)' : 'Ancient Runes (Khaenriah)'}
         </Button>
         <Button onClick={() => setFont('Chasm')}>
-          {lang === 'KR' ? '층암거연' : 'Khaenriah(Chasm var.)'}
+          {lang === 'KR' ? '고대문자 (층암거연)' : 'Ancient Runes (Chasm var.)'}
         </Button>
       </div>
 
