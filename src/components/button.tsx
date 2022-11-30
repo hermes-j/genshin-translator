@@ -4,25 +4,23 @@
  */
 
 import styled from 'styled-components';
-import '../font/font.css';
 
-const KeyButton = styled.button`
-  display: inline-flex;
+const Button = styled.button`
+
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
-  user-select: none;
-  
-  background-color: #eee;
-  margin: 2px;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
   border-color: transparent;
   border-radius: 0.25em;
-  box-shadow: 0 1px 4px #ddd;
-  
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+  margin: 5px;
+  padding: 0.1rem 1.5rem;
+  vertical-align: top;
+  font-weight: bold;
+  user-select: none;
+
   transition: .2s;
   
   &:hover {
@@ -39,4 +37,4 @@ const KeyButton = styled.button`
   }
 `;
 
-export default KeyButton;
+export default Button;

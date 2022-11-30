@@ -31,3 +31,15 @@
     font-family: "Chasm";
     src: url("KhaenriahNeue-Chasm-2.000.otf");
 }
+
+/* temporary font */
+@font-face {
+    font-family: "Inazumap";
+    src: url("inazuma.otf");
+}
+
+/* temporary font */
+@font-face {
+    font-family: "Inazumap";
+    src: url("inazuma.otf");
+}

@@ -3,16 +3,26 @@ import './App.css';
 import InputBox from './components/inputbox';
 import KeyButton from './components/keybutton';
 import './font/font.css';
-import { ReactComponent as GitIcon } from './icons/mark-github.svg';
+import Button from './components/button';
+import { BsBackspace } from 'react-icons/bs';
+import { MdSpaceBar, MdDelete } from 'react-icons/md';
+import { HiSwitchVertical } from 'react-icons/hi';
 
 function App() {
   const [lang, setLang] = useState('KR');
   const [font, setFont] = useState('Teyvat');
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState(
+    'THE FLOWER CARRIAGE ROCKED NAHIDA OPENED HER EYES'
+  );
+  const [order, setOrder] = useState(false);
 
   const onKeyClick = (value: string) => {
     setContent(content + value);
     console.log(content);
+  };
+
+  const onSpace = () => {
+    setContent(content + ' ');
   };
 
   const onBackSpace = () => {
@@ -58,51 +68,111 @@ function App() {
 
   return (
     <div className='App'>
-      <div style={{ paddingTop: 15 }}>
+      <div style={{ paddingTop: 15, userSelect: 'none' }}>
         <h1>{lang === 'KR' ? '원신 번역기' : 'Genshin Impact Translator'}</h1>
         <h5 style={{ fontFamily: 'Teyvat' }}>Genshin Impact Translator</h5>
       </div>
-      <div>
+
+      {/* selecting font */}
+      <div style={{ margin: '0 1rem' }}>
+        <Button onClick={() => setFont('Teyvat')}>
+          {lang === 'KR' ? '티바트 공용' : 'Teyvat Common'}
+        </Button>
+        <Button onClick={() => setFont('Inazuma')}>
+          {lang === 'KR' ? '이나즈마' : 'Inazuma'}
+        </Button>
+        <Button onClick={() => setFont('inazumap')}>
+          {lang === 'KR' ? "이나즈마('p' 추가)" : "Inazuma(+letter 'p')"}
+        </Button>
+        <Button onClick={() => setFont('Sumeru')}>
+          {lang === 'KR' ? '수메르 우림' : 'Sumeru'}
+        </Button>
+        <Button onClick={() => setFont('Deshret')}>
+          {lang === 'KR' ? '수메르 사막' : 'Deshret'}
+        </Button>
+        <Button onClick={() => setFont('Khaenriah')}>
+          {lang === 'KR' ? '켄리아' : 'Khaenriah'}
+        </Button>
+        <Button onClick={() => setFont('Chasm')}>
+          {lang === 'KR' ? '층암거연' : 'Khaenriah(Chasm var.)'}
+        </Button>
+      </div>
+
+      {/* I/O */}
+      <div style={order === false ? styles.orderZero : styles.orderOne}>
         <InputBox
           className='content'
           style={{ fontFamily: font, fontSize: 20 }}
           value={content}
-          placeholder='INPUT'
+          placeholder='content'
+          onChange={(event) => {
+            if (!order) setContent(event.target.value);
+          }}
+          readOnly={order}
+        />
+        <HiSwitchVertical
+          style={{ display: 'grid', alignItems: 'center' }}
+          size='40'
+          onClick={() => {
+            setOrder(!order);
+          }}
         />
         <InputBox
           className='result'
-          style={{ fontFamily: 'NanumGothic', fontSize: 25 }}
+          style={{ fontFamily: 'NanumGothic', fontSize: 25, fontWeight: 500 }}
           value={content}
-          placeholder={lang === 'KR' ? '결과' : 'Result'}
+          placeholder={lang === 'KR' ? '알파벳' : 'Alphabet'}
+          onChange={(event) => {
+            if (order) setContent(event.target.value);
+          }}
+          readOnly={!order}
         />
       </div>
-      <KeyButtonList />
-      <div style={{ marginTop: '10px' }}></div>
-      <button onClick={() => onBackSpace()}>
-        {lang === 'KR' ? '지우기' : 'Backspace'}
-      </button>
-      <button onClick={() => setContent('')}>
-        {lang === 'KR' ? '리셋' : 'reset'}
-      </button>
 
-      <div style={{ marginTop: '5%' }}>
-        <button onClick={() => setFont('Teyvat')}>{lang === 'KR' ? '티바트 공용' : 'Teyvat Common'}</button>
-        <button onClick={() => setFont('Inazuma')}>{lang === 'KR' ? '이나즈마' : 'Inazuma'}</button>
-        <button onClick={() => setFont('Sumeru')}>{lang === 'KR' ? '수메르 우림' : 'Sumeru'}</button>
-        <button onClick={() => setFont('Deshret')}>{lang === 'KR' ? '수메르 사막' : 'Deshret'}</button>
-        <button onClick={() => setFont('Khaenriah')}>{lang === 'KR' ? '켄리아' : 'Khaenriah'}</button>
-        <button onClick={() => setFont('Chasm')}>{lang === 'KR' ? '층암거연' : 'Khaenriah(Chasm var.)'}</button>
+      {/* Keybutton */}
+      <div style={{ margin: '0.5rem 1rem' }}>
+        <KeyButtonList />
       </div>
+
+      {/* are these necessary? */}
+      <div style={{ marginTop: '10px' }}></div>
+      <KeyButton onClick={() => onSpace()}>
+        <MdSpaceBar />
+      </KeyButton>
+      <KeyButton onClick={() => onBackSpace()}>
+        <BsBackspace />
+      </KeyButton>
+      <KeyButton onClick={() => setContent('')}>
+        <MdDelete />
+      </KeyButton>
+
       {/* Language & Github */}
       <div style={{ marginTop: '5%' }}>
-        <button onClick={() => setLang('KR')}>Korean</button>
-        <button onClick={() => setLang('EN')}>English</button>
+        <Button onClick={() => setLang('KR')}>한국어</Button>
+        <Button onClick={() => setLang('EN')}>English</Button>
+      </div>
+      <div>
         <a href='https://github.com/ramzoon/genshin-translate' target='blank'>
-          <GitIcon width={40} height={40} fill={'black'} />
+          <Button>Github</Button>
         </a>
       </div>
     </div>
   );
 }
+
+const styles = {
+  orderZero: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  } as const,
+  orderOne: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column-reverse',
+  } as const,
+};
 
 export default App;
