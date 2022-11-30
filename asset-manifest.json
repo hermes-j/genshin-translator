@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/genshin-translator/static/css/main.0075d3f9.css",
-    "main.js": "/genshin-translator/static/js/main.7bcc62d6.js",
+    "main.js": "/genshin-translator/static/js/main.b67cb521.js",
     "static/js/787.d43a9dbe.chunk.js": "/genshin-translator/static/js/787.d43a9dbe.chunk.js",
     "static/media/NanumGothic.ttf": "/genshin-translator/static/media/NanumGothic.46c03af3832f3527bd51.ttf",
     "static/media/inazuma.otf": "/genshin-translator/static/media/inazuma.815303697385cd9c793c.otf",
@@ -13,11 +13,11 @@
     "static/media/DeshretNeue-Regular-1.001.otf": "/genshin-translator/static/media/DeshretNeue-Regular-1.001.5ac4939d690c88ced681.otf",
     "index.html": "/genshin-translator/index.html",
     "main.0075d3f9.css.map": "/genshin-translator/static/css/main.0075d3f9.css.map",
-    "main.7bcc62d6.js.map": "/genshin-translator/static/js/main.7bcc62d6.js.map",
+    "main.b67cb521.js.map": "/genshin-translator/static/js/main.b67cb521.js.map",
     "787.d43a9dbe.chunk.js.map": "/genshin-translator/static/js/787.d43a9dbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0075d3f9.css",
-    "static/js/main.7bcc62d6.js"
+    "static/js/main.b67cb521.js"
   ]
 }
