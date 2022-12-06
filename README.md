@@ -3,10 +3,7 @@ A translator for alphabet used in the video game "Genshin Impact".
 
 [한국어로 보기](/README_KR.md)
 
-## How to use
-1. Choose Languages you want to translate.
-2. Click the letters below to enter contents in translator. You can also type in the textbox to translate.
-3. You can click arrow-switch button to change order of textboxes.
+## [How to use](/docs/HowToUse.md)
 
 ## Supported Languages
 There may be missing letters in some languages since they are not appeared yet.
@@ -26,9 +23,14 @@ The following languages are not supported since they are not based on Latin alph
 ## Version
 - v0.0.1 - prototype based on data up to 3.1 version of Genshin Impact
 - v0.1.0 - Improve Design for better UX
+- v0.2.0 - Add new feature: you can download genshin languages you entered to img
 
 ## References
 - https://genshin-impact.fandom.com/wiki/Language
 - https://www.reddit.com/r/Genshin_Impact_Leaks/comments/xihki4/contains_leak_we_deciphered_the_sumeru_desert/
 - original font files from https://github.com/SpeedyOrc-C/Hoyo-Glyphs
-- react-icons https://react-icons.github.io/react-icons/
+
+## Used Libraries
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [react-icons](https://github.com/react-icons/react-icons)
+- [html-to-img](https://github.com/bubkoo/html-to-image)
