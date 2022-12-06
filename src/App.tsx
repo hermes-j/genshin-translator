@@ -4,10 +4,19 @@ import InputBox from './components/inputbox';
 import KeyButton from './components/keybutton';
 import './font/font.css';
 import Button from './components/button';
+import { alphas } from './constants/alphas';
 
-import { BsBackspace } from 'react-icons/bs';
-import { MdSpaceBar, MdDelete } from 'react-icons/md';
-import { HiSwitchVertical } from 'react-icons/hi';
+// icons
+import {
+  HiOutlineBackspace as IconBackspace,
+  HiSwitchVertical as IconSwitch,
+} from 'react-icons/hi';
+import {
+  MdSpaceBar as IconSpacebar,
+  MdDelete as IconDelete,
+  MdSave as IconSave,
+} from 'react-icons/md';
+import { onHtmltoImg } from './actions/htmlToImg';
 
 function App() {
   const [lang, setLang] = useState('KR');
@@ -17,7 +26,6 @@ function App() {
 
   const onKeyClick = (value: string) => {
     setContent(content + value);
-    console.log(content);
   };
 
   const onSpace = () => {
@@ -68,27 +76,37 @@ function App() {
           {lang === 'KR' ? '고대문자 (층암거연)' : 'Ancient Runes (Chasm var.)'}
         </Button>
       </div>
-
+      <KeyButton
+        //style={{ position: 'absolute', right: '10%' }}
+        style={{ marginTop: 10 }}
+        onClick={onHtmltoImg}
+      >
+        <IconSave />
+      </KeyButton>
       {/* I/O */}
       <div style={order === false ? styles.orderZero : styles.orderOne}>
         <InputBox
+          id='teyvat'
           className='content'
           style={{ fontFamily: font, fontSize: 20 }}
           value={content}
           placeholder='input'
-          onChange={(event) => {
+          onChange={(event: any) => {
             if (!order) setContent(event.target.value);
           }}
           readOnly={order}
         />
-        <HiSwitchVertical
-          style={{ display: 'grid', alignItems: 'center' }}
-          size='40'
-          onClick={() => {
-            setOrder(!order);
-          }}
-        />
+        <div style={{ margin: 10 }}>
+          <IconSwitch
+            style={{ display: 'grid', alignItems: 'center' }}
+            size='40'
+            onClick={() => {
+              setOrder(!order);
+            }}
+          />
+        </div>
         <InputBox
+          id='alpha'
           className='result'
           style={{ fontFamily: 'NanumGothic', fontSize: 25, fontWeight: 500 }}
           value={content}
@@ -108,13 +126,13 @@ function App() {
       {/* are these necessary? */}
       <div style={{ marginTop: '10px' }}></div>
       <KeyButton onClick={() => onSpace()}>
-        <MdSpaceBar />
+        <IconSpacebar />
       </KeyButton>
       <KeyButton onClick={() => onBackSpace()}>
-        <BsBackspace />
+        <IconBackspace />
       </KeyButton>
       <KeyButton onClick={() => setContent('')}>
-        <MdDelete />
+        <IconDelete />
       </KeyButton>
 
       {/* Language & Github */}
@@ -137,12 +155,14 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+    margin: '10px 0px',
   } as const,
   orderOne: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column-reverse',
+    margin: '10px 0px',
   } as const,
 };
 
