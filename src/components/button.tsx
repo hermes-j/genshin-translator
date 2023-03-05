@@ -11,7 +11,7 @@ const Button = styled.button`
   align-items: center;
   height: 2rem;
   font-size: 1rem;
-  background-color: #f5f5f5;
+  background-color: #f8f7f2;
   border: 1px solid #dcdcdc;
   border-color: transparent;
   border-radius: 0.25em;
@@ -24,12 +24,13 @@ const Button = styled.button`
   transition: .2s;
   
   &:hover {
-    background-color: #3e90e8;
+    background-color: #474c59;
+    color: #f8f7f2;
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px hsla(220, 90%, 56%, 0.2);
+    box-shadow: 0px 0px 0px 2px #474c598e;
   }
   
   &:active {

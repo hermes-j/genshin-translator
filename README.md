@@ -24,6 +24,7 @@ The following languages are not supported since they are not based on Latin alph
 - v0.0.1 - prototype based on data up to 3.1 version of Genshin Impact
 - v0.1.0 - Improve Design for better UX
 - v0.2.0 - Add new feature: you can download genshin languages you entered to img
+- v0.3.0 - Update letter 'P' in Inazuma script
 
 ## References
 - https://genshin-impact.fandom.com/wiki/Language

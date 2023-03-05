@@ -19,7 +19,7 @@ import {
 import { onHtmltoImg } from './actions/htmlToImg';
 
 function App() {
-  const [lang, setLang] = useState('KR');
+  const [lang, setLang] = useState('EN');
   const [font, setFont] = useState('Teyvat');
   const [content, setContent] = useState('');
   const [order, setOrder] = useState(false);
@@ -48,7 +48,7 @@ function App() {
   return (
     <div className='App'>
       <div style={{ paddingTop: 15, userSelect: 'none' }}>
-        <h1>{lang === 'KR' ? '원신 번역기' : 'Genshin Impact Translator'}</h1>
+        <h1>{lang === 'KR' ? '원파고 - 원신 번역기' : 'Genshin Impact Translator'}</h1>
         <h5 style={{ fontFamily: 'Teyvat' }}>Genshin Impact Translator</h5>
       </div>
 
@@ -59,9 +59,6 @@ function App() {
         </Button>
         <Button onClick={() => setFont('Inazuma')}>
           {lang === 'KR' ? '이나즈마' : 'Inazuma'}
-        </Button>
-        <Button onClick={() => setFont('inazumap')}>
-          {lang === 'KR' ? "이나즈마 ('p' 추가)" : "Inazuma(+letter 'p')"}
         </Button>
         <Button onClick={() => setFont('Sumeru')}>
           {lang === 'KR' ? '수메르 우림' : 'Sumeru'}
@@ -96,7 +93,7 @@ function App() {
           }}
           readOnly={order}
         />
-        <div style={{ margin: 10 }}>
+        <KeyButton style={{ margin: 10 }}>
           <IconSwitch
             style={{ display: 'grid', alignItems: 'center' }}
             size='40'
@@ -104,7 +101,7 @@ function App() {
               setOrder(!order);
             }}
           />
-        </div>
+        </KeyButton>
         <InputBox
           id='alpha'
           className='result'
@@ -145,6 +142,11 @@ function App() {
           <Button>Github</Button>
         </a>
       </div>
+
+      {/* Hits */}
+      <a href="https://hits.seeyoufarm.com">
+        <img style={{marginTop: 10}} src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhermes-j.github.io%2Fgenshin-translator%2F&count_bg=%2320BCFF&title_bg=%23474C59&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+      </a>
     </div>
   );
 }

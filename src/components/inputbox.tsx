@@ -3,6 +3,7 @@ import '../font/font.css';
 
 
 const InputBox = styled.textarea`
+  background-color: #F8F7F2;
   border: 2px solid #dcdcdc;
   border-radius: 10px;
   padding: 20px;

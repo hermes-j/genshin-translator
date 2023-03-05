@@ -13,7 +13,7 @@ const KeyButton = styled.button`
   font-size: 1.8rem;
   user-select: none;
   
-  background-color: #eee;
+  background-color: #f8f7f2;
   margin: 2px;
   border-color: transparent;
   border-radius: 0.25em;
@@ -26,12 +26,13 @@ const KeyButton = styled.button`
   transition: .2s;
   
   &:hover {
-    background-color: #3e90e8;
+    background-color: #474C59;
+    color: #f8f7f2;
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px hsla(220, 90%, 56%, 0.2);
+    box-shadow: 0px 0px 0px 2px #474c598e;
   }
   
   &:active {
