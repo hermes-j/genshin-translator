@@ -13,7 +13,7 @@
 }
 @font-face {
     font-family: "Inazuma";
-    src: url("InazumaNeue-Regular-0.006.otf");
+    src: url("InazumaNeue-Regular-1.000.otf");
 }
 @font-face {
     font-family: "Sumeru";
@@ -30,16 +30,4 @@
 @font-face {
     font-family: "Chasm";
     src: url("KhaenriahNeue-Chasm-2.000.otf");
-}
-
-/* temporary font */
-@font-face {
-    font-family: "Inazumap";
-    src: url("inazuma.otf");
-}
-
-/* temporary font */
-@font-face {
-    font-family: "Inazumap";
-    src: url("inazuma.otf");
 }
