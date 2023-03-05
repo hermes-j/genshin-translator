@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/genshin-translator/static/css/main.0075d3f9.css",
-    "main.js": "/genshin-translator/static/js/main.347cd4d8.js",
+    "main.css": "/genshin-translator/static/css/main.65291445.css",
+    "main.js": "/genshin-translator/static/js/main.ecddc5c6.js",
     "static/js/787.d43a9dbe.chunk.js": "/genshin-translator/static/js/787.d43a9dbe.chunk.js",
     "static/media/NanumGothic.ttf": "/genshin-translator/static/media/NanumGothic.46c03af3832f3527bd51.ttf",
-    "static/media/inazuma.otf": "/genshin-translator/static/media/inazuma.815303697385cd9c793c.otf",
+    "static/media/InazumaNeue-Regular-1.000.otf": "/genshin-translator/static/media/InazumaNeue-Regular-1.000.90d2bd1a3efaacac10cf.otf",
     "static/media/KhaenriahNeue-Chasm-2.000.otf": "/genshin-translator/static/media/KhaenriahNeue-Chasm-2.000.52c09648eb98a8bab955.otf",
     "static/media/KhaenriahNeue-Regular-2.000.otf": "/genshin-translator/static/media/KhaenriahNeue-Regular-2.000.1c34ea4ca985d5913650.otf",
-    "static/media/InazumaNeue-Regular-0.006.otf": "/genshin-translator/static/media/InazumaNeue-Regular-0.006.12e53cc5fe90afdc960f.otf",
     "static/media/SumeruNeue-Regular-0.007.otf": "/genshin-translator/static/media/SumeruNeue-Regular-0.007.51ab78a644348f2b9b1b.otf",
     "static/media/TeyvatNeue-Regular-1.002.otf": "/genshin-translator/static/media/TeyvatNeue-Regular-1.002.455b1fde9befc908be86.otf",
     "static/media/DeshretNeue-Regular-1.001.otf": "/genshin-translator/static/media/DeshretNeue-Regular-1.001.5ac4939d690c88ced681.otf",
     "index.html": "/genshin-translator/index.html",
-    "main.0075d3f9.css.map": "/genshin-translator/static/css/main.0075d3f9.css.map",
-    "main.347cd4d8.js.map": "/genshin-translator/static/js/main.347cd4d8.js.map",
+    "main.65291445.css.map": "/genshin-translator/static/css/main.65291445.css.map",
+    "main.ecddc5c6.js.map": "/genshin-translator/static/js/main.ecddc5c6.js.map",
     "787.d43a9dbe.chunk.js.map": "/genshin-translator/static/js/787.d43a9dbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0075d3f9.css",
-    "static/js/main.347cd4d8.js"
+    "static/css/main.65291445.css",
+    "static/js/main.ecddc5c6.js"
   ]
 }
