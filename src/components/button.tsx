@@ -6,7 +6,6 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-
   justify-content: center;
   align-items: center;
   height: 2rem;
@@ -21,8 +20,8 @@ const Button = styled.button`
   font-weight: bold;
   user-select: none;
 
-  transition: .2s;
-  
+  transition: 0.2s;
+
   &:hover {
     background-color: #474c59;
     color: #f8f7f2;
@@ -32,7 +31,7 @@ const Button = styled.button`
     outline: none;
     box-shadow: 0px 0px 0px 2px #474c598e;
   }
-  
+
   &:active {
     transform: translateY(2px);
   }

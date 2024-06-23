@@ -2,32 +2,36 @@
 
 /* Webpage Fonts */
 @font-face {
-    font-family: "NanumGothic";
-    src: url(NanumGothic.ttf);
+  font-family: 'NanumGothic';
+  src: url(NanumGothic.ttf);
 }
 
 /* Genshin Impact Languages */
 @font-face {
-    font-family: "Teyvat";
-    src: url("TeyvatNeue-Regular-1.002.otf");
+  font-family: 'Teyvat';
+  src: url('TeyvatNeue-Regular-1.002.otf');
 }
 @font-face {
-    font-family: "Inazuma";
-    src: url("InazumaNeue-Regular-1.000.otf");
+  font-family: 'Inazuma';
+  src: url('InazumaNeue-Regular-1.000.otf');
 }
 @font-face {
-    font-family: "Sumeru";
-    src: url("SumeruNeue-Regular-0.007.otf");
+  font-family: 'Sumeru';
+  src: url('SumeruNeue-Regular-0.007.otf');
 }
 @font-face {
-    font-family: "Deshret";
-    src: url("DeshretNeue-Regular-1.001.otf");
+  font-family: 'Deshret';
+  src: url('DeshretNeue-Regular-1.001.otf');
 }
 @font-face {
-    font-family: "Khaenriah";
-    src: url("KhaenriahNeue-Regular-2.000.otf");
+  font-family: 'Khaenriah';
+  src: url('KhaenriahNeue-Regular-2.000.otf');
 }
 @font-face {
-    font-family: "Chasm";
-    src: url("KhaenriahNeue-Chasm-2.000.otf");
+  font-family: 'Chasm';
+  src: url('KhaenriahNeue-Chasm-2.000.otf');
+}
+@font-face {
+  font-family: 'Fontaine';
+  src: url('FontaineScript-Regular.ttf');
 }

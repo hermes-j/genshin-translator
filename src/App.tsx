@@ -19,7 +19,7 @@ import {
 import { onHtmltoImg } from './actions/htmlToImg';
 
 function App() {
-  const [lang, setLang] = useState('EN');
+  const [lang, setLang] = useState('KR');
   const [font, setFont] = useState('Teyvat');
   const [content, setContent] = useState('');
   const [order, setOrder] = useState(false);
@@ -48,7 +48,9 @@ function App() {
   return (
     <div className='App'>
       <div style={{ paddingTop: 15, userSelect: 'none' }}>
-        <h1>{lang === 'KR' ? '원파고 - 원신 번역기' : 'Genshin Impact Translator'}</h1>
+        <h1>
+          {lang === 'KR' ? '원파고 - 원신 번역기' : 'Genshin Impact Translator'}
+        </h1>
         <h5 style={{ fontFamily: 'Teyvat' }}>Genshin Impact Translator</h5>
       </div>
 
@@ -72,6 +74,9 @@ function App() {
         <Button onClick={() => setFont('Chasm')}>
           {lang === 'KR' ? '고대문자 (층암거연)' : 'Ancient Runes (Chasm var.)'}
         </Button>
+        <Button onClick={() => setFont('Fontaine')}>
+          {lang === 'KR' ? '폰타인' : 'Fontaine'}
+        </Button>
       </div>
       <KeyButton
         //style={{ position: 'absolute', right: '10%' }}
@@ -89,7 +94,7 @@ function App() {
           value={content}
           placeholder='input'
           onChange={(event: any) => {
-            if (!order) setContent(event.target.value);
+            if (!order) setContent(event.target.value.toUpperCase());
           }}
           readOnly={order}
         />
@@ -109,7 +114,7 @@ function App() {
           value={content}
           placeholder={lang === 'KR' ? '알파벳' : 'Alphabet'}
           onChange={(event) => {
-            if (order) setContent(event.target.value);
+            if (order) setContent(event.target.value.toUpperCase());
           }}
           readOnly={!order}
         />
@@ -132,8 +137,17 @@ function App() {
         <IconDelete />
       </KeyButton>
 
+      {/* comment line */}
+      <div style={{ marginTop: '2%' }}>
+        2024.06.23 폰타인 문자가 추가되었습니다. 급하게 추가되었기 때문에 크기가
+        맞지 않는 폰타인 문자의 폰트 크기는 현재 ttf 파일을 수정 중이며 곧
+        조정될 예정입니다. <br />
+        Fontaine script Updated. The font size of Fontaine script will be
+        adjusted soon.
+      </div>
+
       {/* Language & Github */}
-      <div style={{ marginTop: '5%' }}>
+      <div style={{ marginTop: '3%' }}>
         <Button onClick={() => setLang('KR')}>한국어</Button>
         <Button onClick={() => setLang('EN')}>English</Button>
       </div>
@@ -144,8 +158,12 @@ function App() {
       </div>
 
       {/* Hits */}
-      <a href="https://hits.seeyoufarm.com">
-        <img style={{marginTop: 10}} src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhermes-j.github.io%2Fgenshin-translator%2F&count_bg=%2320BCFF&title_bg=%23474C59&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+      <a href='https://hits.seeyoufarm.com'>
+        <img
+          style={{ marginTop: 10 }}
+          src='https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhermes-j.github.io%2Fgenshin-translator%2F&count_bg=%2320BCFF&title_bg=%23474C59&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false'
+          alt=''
+        />
       </a>
     </div>
   );
