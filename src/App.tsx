@@ -139,7 +139,7 @@ function App() {
 
       {/* comment line */}
       <div style={{ marginTop: '2%' }}>
-        2024.06.23 폰타인 문자가 추가되었습니다. 급하게 추가되었기 때문에 크기가
+        2024.06.24 폰타인 문자가 추가되었습니다. 급하게 추가되었기 때문에 크기가
         맞지 않는 폰타인 문자의 폰트 크기는 현재 ttf 파일을 수정 중이며 곧
         조정될 예정입니다. <br />
         Fontaine script Updated. The font size of Fontaine script will be
