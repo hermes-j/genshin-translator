@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/genshin-translator/static/css/main.92af85d5.css",
-    "main.js": "/genshin-translator/static/js/main.8ea5be12.js",
+    "main.css": "/genshin-translator/static/css/main.d0971f09.css",
+    "main.js": "/genshin-translator/static/js/main.35f106f8.js",
     "static/js/453.cb627154.chunk.js": "/genshin-translator/static/js/453.cb627154.chunk.js",
     "static/media/NanumGothic.ttf": "/genshin-translator/static/media/NanumGothic.46c03af3832f3527bd51.ttf",
     "static/media/InazumaNeue-Regular-1.000.otf": "/genshin-translator/static/media/InazumaNeue-Regular-1.000.90d2bd1a3efaacac10cf.otf",
     "static/media/KhaenriahNeue-Chasm-2.000.otf": "/genshin-translator/static/media/KhaenriahNeue-Chasm-2.000.52c09648eb98a8bab955.otf",
     "static/media/KhaenriahNeue-Regular-2.000.otf": "/genshin-translator/static/media/KhaenriahNeue-Regular-2.000.1c34ea4ca985d5913650.otf",
     "static/media/SumeruNeue-Regular-0.007.otf": "/genshin-translator/static/media/SumeruNeue-Regular-0.007.51ab78a644348f2b9b1b.otf",
-    "static/media/FontaineScript-Regular.ttf": "/genshin-translator/static/media/FontaineScript-Regular.ceb0c91e3b60ef416446.ttf",
     "static/media/TeyvatNeue-Regular-1.002.otf": "/genshin-translator/static/media/TeyvatNeue-Regular-1.002.455b1fde9befc908be86.otf",
-    "static/media/DeshretNeue-Regular-1.001.otf": "/genshin-translator/static/media/DeshretNeue-Regular-1.001.5ac4939d690c88ced681.otf",
+    "static/media/FonteAinee-Regular.otf": "/genshin-translator/static/media/FonteAinee-Regular.0aa679516725cec2223d.otf",
+    "static/media/DeshretNeue-Regular-1.002.otf": "/genshin-translator/static/media/DeshretNeue-Regular-1.002.ace9cf2fe470fa92b8df.otf",
     "index.html": "/genshin-translator/index.html",
-    "main.92af85d5.css.map": "/genshin-translator/static/css/main.92af85d5.css.map",
-    "main.8ea5be12.js.map": "/genshin-translator/static/js/main.8ea5be12.js.map",
+    "main.d0971f09.css.map": "/genshin-translator/static/css/main.d0971f09.css.map",
+    "main.35f106f8.js.map": "/genshin-translator/static/js/main.35f106f8.js.map",
     "453.cb627154.chunk.js.map": "/genshin-translator/static/js/453.cb627154.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92af85d5.css",
-    "static/js/main.8ea5be12.js"
+    "static/css/main.d0971f09.css",
+    "static/js/main.35f106f8.js"
   ]
 }
