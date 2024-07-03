@@ -139,21 +139,26 @@ function App() {
 
       {/* comment line */}
       <div style={{ marginTop: '2%' }}>
-        2024.06.24 폰타인 문자가 추가되었습니다. 급하게 추가되었기 때문에 크기가
-        맞지 않는 폰타인 문자의 폰트 크기는 현재 ttf 파일을 수정 중이며 곧
-        조정될 예정입니다. <br />
-        Fontaine script Updated. The font size of Fontaine script will be
-        adjusted soon.
+        <hr />
+        2024.07.04 폰타인 문자 폰트를 Hoyo-Glyph의 폰트를 사용하여 변경.
+        <br /> 폰트가 적용되지 않은 알파벳의 경우 아직 문자가 완전히 판명되지
+        않은 경우인 것이라 판단해 그대로 두었습니다.
+        <br />
+        <br />
+        Changed source of Fontaine font to Hoyo-Glyph(link below).
       </div>
 
       {/* Language & Github */}
-      <div style={{ marginTop: '3%' }}>
+      <div style={{ marginTop: '2%' }}>
         <Button onClick={() => setLang('KR')}>한국어</Button>
         <Button onClick={() => setLang('EN')}>English</Button>
       </div>
       <div>
         <a href='https://github.com/ramzoon/genshin-translate' target='blank'>
           <Button>Github</Button>
+        </a>
+        <a href='https://github.com/SpeedyOrc-C/HoYo-Glyphs' target='blank'>
+          <Button>{lang === 'KR' ? '폰트 출처' : 'Font Source'}</Button>
         </a>
       </div>
 

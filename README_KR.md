@@ -30,14 +30,14 @@
 - v0.1.0 - 더 편한 사용을 위한 디자인 개선
 - v0.2.0 - 입력한 내용을 이미지로 저장하는 기능 추가
 - v0.3.0 - 이나즈마 문자 'P' 업데이트
-- v0.4.0 - 폰타인 문자 추가, 모든 인풋에 대문자화 적용
+- 2024.06.24 - 폰타인 문자 추가, 모든 인풋에 대문자화 적용
+- 2024.07.04 - 폰타인 문자 폰트 변경
 
 ## 참조
 
 - https://genshin-impact.fandom.com/wiki/Language
 - https://www.reddit.com/r/Genshin_Impact_Leaks/comments/xihki4/contains_leak_we_deciphered_the_sumeru_desert/
 - 폰트 파일 https://github.com/SpeedyOrc-C/Hoyo-Glyphs
-- 폰타인 폰트 파일 https://www.reddit.com/r/Genshin_Impact/comments/1739kqe/fontaine_script_font/
 
 ## 사용한 라이브러리
 
